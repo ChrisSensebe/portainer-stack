@@ -33,8 +33,8 @@ services:
       replicas: 1
       placement:
         constraints: 
-	  - node.role == manager
-	  - node.labels.portainer.portainer-data == true
+          - node.role == manager
+          - node.labels.portainer.portainer-data == true
 
 networks:
   agent_network:
